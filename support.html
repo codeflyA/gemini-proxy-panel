@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瓯e学车 - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 50px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .tagline {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: #667eea;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: #555;
+            min-width: 100px;
+        }
+
+        .contact-value {
+            color: #333;
+        }
+
+        .contact-value a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .answer {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <h1>瓯e学车</h1>
+        <p class="tagline">安全、文明驾驶从这里开始</p>
+    </div>
+
+    <div class="section">
+        <h2>联系我们</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-label">邮箱地址：</span>
+                <span class="contact-value">
+                        <a href="mailto:wangsf122@163.com">wangsf122@163.com</a>
+                    </span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">工作时间：</span>
+                <span class="contact-value">周一至周五 9:00-18:00</span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">回复时间：</span>
+                <span class="contact-value">我们会在24小时内回复您的邮件</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>常见问题</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <div class="question">Q: 如何进行学时签到？</div>
+                <div class="answer">A: 打开APP后，点击"扫码签到"，扫描教练车上的二维码即可完成签到。请确保已开启位置权限和相机权限。</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q: 为什么无法进行人脸识别？</div>
+                <div class="answer">A: 请确保：1) 已授权相机权限；2) 光线充足；3) 正脸面对摄像头；4) 网络连接正常。如问题持续，请联系客服。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>关于我们</h2>
+        <div class="contact-info">
+            <p style="line-height: 1.8; color: #666;">
+                瓯e学车APP是浙江交科科技有限公司旗下的一款方便驾驶培训的客户端应用，该应用主要包括学员签到、扫码学车、驾校信息显示等功能方便学员使用，极大的帮助学员、驾校、行业部门顺利开展驾驶学习各项工作。 瓯e学车APP，安全、文明驾驶从这里开始！       </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 瓯e学车. 保留所有权利.</p>
+        <p>浙江交科科技有限公司</p>
+    </div>
+</div>
+</body>
+</html>
